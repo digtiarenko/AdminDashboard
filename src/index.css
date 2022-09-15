@@ -1,11 +1,11 @@
 /* тут должен быть сброс стилей */
 body {
-  background-color: #ffffff;
-  color: #52555f;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  line-height: 1.17;
   margin: 0;
+}
+hr {
+  margin: 0;
+  border-top: 1px solid rgb(196, 196, 196);
+  border-bottom: none;
 }
 
 /* Utilities */

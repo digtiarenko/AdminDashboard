@@ -1,5 +1,8 @@
+import { ChartFeatured } from 'components/chartFeatured/ChartFeatured';
+import { ChartNormal } from 'components/chartNormal/ChartNormal';
 import { Navbar } from 'components/navbar/Navbar';
 import { Sidebar } from 'components/sidebar/Sidebar';
+import { Widget } from 'components/widget/Widget';
 import './home.scss';
 
 export const Home = () => {
@@ -8,7 +11,16 @@ export const Home = () => {
       <Sidebar />
       <div className="homeContainer">
         <Navbar />
-        home container
+        <div className="widgets">
+          <Widget type="user" />
+          <Widget type="order" />
+          <Widget type="earnings" />
+          <Widget type="balance" />
+        </div>
+        <div className="charts">
+          <ChartFeatured />
+          <ChartNormal />
+        </div>
       </div>
     </div>
   );

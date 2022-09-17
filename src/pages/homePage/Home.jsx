@@ -20,7 +20,7 @@ export const Home = () => {
         </div>
         <div className="charts">
           <ChartFeatured />
-          <ChartNormal />
+          <ChartNormal title="Last 6 Month Revenue" aspect={2 / 1} />
         </div>
         <div className="listContainer">
           <div className="listTitle">Latest transactions</div>

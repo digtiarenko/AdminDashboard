@@ -17,11 +17,11 @@ const data = [
   { name: 'June', Total: 1700 },
 ];
 
-export const ChartNormal = () => {
+export const ChartNormal = ({ aspect, title }) => {
   return (
     <div className="normal">
-      <h1 className="title">Last 6 Month (Revenue)</h1>
-      <ResponsiveContainer padding="10px" width="100%" aspect={2 / 1}>
+      <h1 className="title">{title}</h1>
+      <ResponsiveContainer padding="10px" width="100%" aspect={aspect}>
         <AreaChart
           width={730}
           height={250}

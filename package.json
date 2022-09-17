@@ -2,7 +2,6 @@
   "name": "admin_dashboard",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://digtiarenko.github.io/AdminDashboard/",
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
@@ -25,11 +24,11 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "predeploy": "npm run build",
+    "deploy": "netlify deploy -p"
   },
   "eslintConfig": {
     "extends": [
@@ -58,6 +57,6 @@
   },
   "lint-staged": {
     "*.{js,jsx}": "eslint --cache --fix",
-    "*.{js,css,md,scss}": "prettier --write"
+    "*.{js,jsx,css,md,scss}": "prettier --write"
   }
 }

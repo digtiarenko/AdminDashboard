@@ -10,12 +10,15 @@ import ListIcon from '@mui/icons-material/List';
 import SettingsSuggestIcon from '@mui/icons-material/SettingsSuggest';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import LogoutIcon from '@mui/icons-material/Logout';
+import { Link } from 'react-router-dom';
 
 export const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="top">
-        <span className="logo">Admin Dashboard</span>
+        <Link to="/">
+          <span className="logo">Admin Dashboard</span>
+        </Link>
       </div>
       <hr />
       <div className="center">
@@ -26,14 +29,18 @@ export const Sidebar = () => {
             <span>Dashboard</span>
           </li>
           <p className="title">LISTS</p>
-          <li>
-            <PeopleAltIcon className="icon" />
-            <span>Users</span>
-          </li>
-          <li>
-            <ProductionQuantityLimitsIcon className="icon" />
-            <span>Products</span>
-          </li>
+          <Link to="/users">
+            <li>
+              <PeopleAltIcon className="icon" />
+              <span>Users</span>
+            </li>
+          </Link>
+          <Link to="/products">
+            <li>
+              <ProductionQuantityLimitsIcon className="icon" />
+              <span>Products</span>
+            </li>
+          </Link>
           <li>
             <LocalAtmIcon className="icon" />
             <span>Orders</span>

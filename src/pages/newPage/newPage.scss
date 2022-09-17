@@ -4,5 +4,83 @@
 
   .newPageContainer {
     flex: 6;
+
+    .top,
+    .bottom {
+      display: flex;
+      margin: 20px;
+      padding: 20px;
+      -webkit-box-shadow: 2px -2px 23px 5px rgba(0, 0, 0, 0.22);
+      box-shadow: 2px -2px 23px 5px rgba(0, 0, 0, 0.22);
+      .title {
+        color: lightgray;
+        font-size: 20px;
+      }
+
+      .left {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        // text-align: center;
+
+        .image {
+          margin-top: auto;
+          margin-bottom: auto;
+          width: calc(100% - 20px);
+          //   height: 100px;
+          margin-right: auto;
+          margin-left: auto;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+      .right {
+        flex: 2;
+
+        .form {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          justify-content: space-around;
+
+          .formInput {
+            width: 40%;
+
+            label {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+
+              .icon {
+                cursor: pointer;
+              }
+            }
+            input {
+              outline: none;
+              width: 100%;
+              padding: 5px;
+              border: none;
+              border-bottom: 2px solid purple;
+            }
+          }
+
+          .submitButton {
+            margin-top: 10px;
+            width: 150px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            // background-color: purple;
+            color: gray;
+            cursor: pointer;
+            font-weight: bold;
+            &:hover {
+              background-color: purple;
+              color: white;
+            }
+          }
+        }
+      }
+    }
   }
 }

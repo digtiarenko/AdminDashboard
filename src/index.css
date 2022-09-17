@@ -8,6 +8,9 @@ hr {
   border-bottom: none;
 }
 
+a {
+  text-decoration: none;
+}
 /* Utilities */
 h1,
 h2,
@@ -20,6 +23,7 @@ ul,
 body,
 main,
 img {
+  margin: 0;
   display: block;
   max-width: 100%;
   height: auto;

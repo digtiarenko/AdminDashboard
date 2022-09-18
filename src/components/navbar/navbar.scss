@@ -42,10 +42,12 @@
     justify-content: space-between;
 
     .navItem {
-      margin-right: 20px;
+      padding: 5px;
+      margin-right: 10px;
       display: flex;
       align-items: center;
       position: relative;
+      cursor: pointer;
 
       &:last-child {
         margin-right: 0;
